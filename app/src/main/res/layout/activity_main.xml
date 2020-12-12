@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/catstv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Cats"
+        android:textColor="#fff"
+        android:textSize="28sp" />
+
+
+        <ImageView
+            android:layout_below="@+id/catstv"
+            android:id="@+id/catImage"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#222"
+            android:scaleType="centerCrop" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+    <Button
+        android:id="@+id/nextbtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/catImage"
+        android:layout_marginTop="35dp"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/downbtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/nextbtn"
+        android:layout_marginTop="15dp"
+        android:text="Download" />
+</RelativeLayout>
